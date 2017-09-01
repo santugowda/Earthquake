@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Earthquake List</string>
+    <string name="date_time">Date-Time</string>
+    <string name="date_time_holder">Date-Time : </string>
+    <string name="depth">Depth</string>
+    <string name="depth_holder">Depth : </string>
+    <string name="magnitude">Magnitude</string>
+    <string name="magnitude_holder">Magnitude : </string>
+</resources>

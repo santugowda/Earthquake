@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/single_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="75dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date_time_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="15dp"
+                android:textColor="@color/colorGray"
+                android:textStyle="bold"
+                android:text="@string/date_time_holder"/>
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="15dp"
+                android:textColor="@color/colorLightGray"
+                android:textStyle="bold"
+                android:text="@string/date_time"
+                android:layout_toRightOf="@+id/date_time_holder" />
+
+            <TextView
+                android:id="@+id/depth_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="15dp"
+                android:textColor="@color/colorGray"
+                android:textStyle="bold"
+                android:layout_below="@+id/date_time_holder"
+                android:text="@string/depth_holder"/>
+
+            <TextView
+                android:id="@+id/depth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorLightGray"
+                android:layout_below="@+id/date_time"
+                android:text="@string/depth"
+                android:layout_toRightOf="@+id/depth_holder" />
+
+            <TextView
+                android:id="@+id/magnitude_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="15dp"
+                android:textColor="@color/colorGray"
+                android:textStyle="bold"
+                android:layout_below="@+id/depth_holder"
+                android:text="@string/magnitude_holder"/>
+
+            <TextView
+                android:id="@+id/magnitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorLightGray"
+                android:layout_below="@+id/depth"
+                android:text="@string/magnitude"
+                android:layout_toRightOf="@+id/magnitude_holder" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
